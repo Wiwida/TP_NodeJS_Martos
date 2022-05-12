@@ -1,11 +1,18 @@
 import {NextFunction, Request, Response} from "express";
-import {mockTrain} from "../share/mockData";
 
 var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req: Request, res: Response, next: NextFunction) {
-  res.send(mockTrain);
+  res.json([{
+    numero: "8994798",
+    destination:"Paris",
+    depart:"Montpellier"
+  }, {
+        numero: "064576",
+        destination:"Marseille",
+        depart:"Bordeaux"
+      } ]);
 });
 
 module.exports = router;

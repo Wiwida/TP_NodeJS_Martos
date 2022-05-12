@@ -5,7 +5,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes');
 var trainRouter = require('./routes/train');
-const port = 8000;
+const port = process.env.PORT || 8000;
+const url = `http://localhost:${port}/`
 
 var app = express();
 
@@ -19,6 +20,7 @@ app.use('/', indexRouter);
 app.use('/train', trainRouter);
 
 app.listen(port, () => {
-    console.log('Server app listening on port', port, '🚀');
+    console.log('Server app listening on port', port, '✅');
+    console.log('Go to with', url, '🚀');
 });
 module.exports = app;
