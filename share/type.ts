@@ -4,8 +4,8 @@ type Train ={
     dateDepart: string
     dateArrivee: string
     arret: Arret[]
-    gareDepart: string
-    gareArrivee: string
+    gareDepart: Gare[]
+    gareArrivee: Gare[]
 
 }
 
