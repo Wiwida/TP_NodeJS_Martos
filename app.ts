@@ -6,7 +6,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes');
 var trainRouter = require('./routes/train');
 const port = process.env.PORT || 8000;
-const url = `http://localhost:${port}/`
+const url = `http://localhost:${port}/`;
 
 var app = express();
 
