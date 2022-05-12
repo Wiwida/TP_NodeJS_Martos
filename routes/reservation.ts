@@ -11,9 +11,11 @@ router.post('/addRes', (req: Request, res: Response, next: NextFunction) => {
         annuler: false,
         train: mockTrain[0],
     })
-    res.send(mockTrain)
+    res.send('OK')
 })
 
-router.get('/', () => {})
+router.get('/', (req: Request, res: Response, next: NextFunction) => {
+    res.json(mockReservation)
+})
 
 module.exports = router
