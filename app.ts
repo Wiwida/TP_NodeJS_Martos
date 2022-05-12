@@ -3,19 +3,12 @@ var path = require('path')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 
-<<<<<<< HEAD
-var indexRouter = require('./routes');
-var trainRouter = require('./routes/train');
-const port = process.env.PORT || 8000;
-const url = `http://localhost:${port}/`;
-=======
 var indexRouter = require('./routes')
 var trainRouter = require('./routes/train')
 var reservationRouter = require('./routes/reservation')
 
 const port = process.env.PORT || 8000
 const url = `http://localhost:${port}/`
->>>>>>> c2a6fd02086940b83de09cfc66780985400d68ff
 
 var app = express()
 
