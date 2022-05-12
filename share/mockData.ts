@@ -1,30 +1,32 @@
-import {Gare, Train} from "./type";
-
+import { Gare, Passager, Reservation, Train } from './type'
 
 const mockTrain: Train[] = [
     {
         id: 876657,
-        dateDepart: "19/06/2022",
-        dateArrivee: "19/06/2022",
-        arret: []
+        dateDepart: '19/06/2022',
+        dateArrivee: '19/06/2022',
+        arret: [],
     },
     {
         id: 876657,
-        dateDepart: "06/04/2022",
-        dateArrivee: "06/04/2022",
-        arret: []
+        dateDepart: '06/04/2022',
+        dateArrivee: '06/04/2022',
+        arret: [],
     },
 ]
 
-const mockGare: Gare[] =[
+const mockGare: Gare[] = [
     {
-        nom: "",
-        ville: []
-    }
-    ]
+        nom: '',
+        ville: [],
+    },
+]
 
-
-export {
-    mockTrain,
-    mockGare
-}
+const mockReservation: Reservation[] = []
+const mockPassager: Passager[] = [
+    {
+        nom: 'Dassie',
+        prenom: 'Wilhelm',
+    },
+]
+export { mockTrain, mockGare, mockReservation, mockPassager }
