@@ -1,0 +1,6 @@
+export { default as Navbar } from "./Navbar/Navbar"
+export { default as Footer } from "./Footer"
+export { default as TicketCard } from "./Cards/TicketBookedCard"
+export { default as UserInfoCard } from "./Cards/UserInfoCard"
+export { default as TicketFindCard } from "./Cards/TicketFindCard"
+export { default as SeatTypeCard } from "./Cards/SeatTypeCard"

@@ -1,0 +1,47 @@
+.TicketCardContainer,
+.UserCardContainer {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 #691b9a65;
+}
+
+.TicketFindContainer {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 2rem;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 #691b9a65;
+}
+
+.TicketFindContainer p {
+    margin: 0;
+}
+
+.SeatTypeContainer {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 2rem;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 #691b9a65;
+}
+
+.CostPill {
+    position: relative;
+    left: 82%;
+    top: 1.5rem;
+    background-color: #370b6d;
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.2rem;
+}
+
+.TicketTitle {
+    color: #444;
+}
+
+.TicketTitle:hover {
+    color: #a374dd;
+}

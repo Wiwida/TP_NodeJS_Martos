@@ -1,0 +1,37 @@
+.CenterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FormContainer {
+    background-color: #fff;
+    padding: 2rem;
+    width: 30rem;
+    box-shadow: 0 8px 32px 0 #691b9a65;
+}
+
+.TicketInfoContainer {
+    background: rgba(255, 255, 255, 0.4);
+    color: #691b9a;
+    padding: 2rem;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 #691b9a65;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+}
+
+.TicketInfoContainer p {
+    margin: 0;
+}
+
+.FormTitle {
+    text-align: center;
+    color: #691b9a;
+}
+
+.BtnWide {
+    width: 100%;
+}
