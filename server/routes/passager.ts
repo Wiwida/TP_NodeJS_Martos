@@ -2,7 +2,7 @@ import { Request, Response, Router } from "express"
 
 import _ from "lodash"
 import { log } from "../app"
-import { mockPassager } from "../share/mockData"
+import { mockPassager } from "../shared/mockData"
 
 class PassagerRouter {
     public readonly router: Router
@@ -30,8 +30,7 @@ class PassagerRouter {
     private addPassager(req: Request, res: Response) {
         mockPassager.push({
             id: req.body.id,
-            nom: req.body.nom,
-            prenom: req.body.prenom,
+            type: req.body.type,
         })
         log.info(JSON.stringify(mockPassager))
         res.send("Réservation Ajoutée")

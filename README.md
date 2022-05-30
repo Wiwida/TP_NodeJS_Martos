@@ -1,8 +1,6 @@
-# Railway Booking
+# Web Service Train Booking
 
-This is a react template repository. Feel free to use it, to integrate your APIs :)
-
-<img src='./client/proj_img.png' style="width:100%;height:auto;max-width:500px" />
+<img src='./client/proj_img.png' style="width:100%;height:auto;max-width:500px"  alt=""/>
 
 ## Static pages available for users to
 
@@ -12,6 +10,6 @@ This is a react template repository. Feel free to use it, to integrate your APIs
 -   View all their booked tickets
 -   Check for the PNR Status
 
-## Dependencies
+## Run
 
-`materialize-css` `react-router-dom` `react-masonry-css`
+`npm start` for run the server and client

@@ -1,5 +1,5 @@
-import classes from "./PNRStatus.module.css"
 import { useEffect, useState } from "react"
+
 import M from "materialize-css"
 import axios from "axios"
 
@@ -9,7 +9,7 @@ const PNRStatus = () => {
 
     // 6441757962
     const getPNRStatusHandler = () => {
-        const options = {
+        const options: any = {
             method: "GET",
             url: "https://indianrailways.p.rapidapi.com/index.php",
             params: { pnr: pnrNumber },
@@ -42,10 +42,10 @@ const PNRStatus = () => {
     }, [])
 
     return (
-        <div className={classes.CenterContainer} style={{ height: "100vh" }}>
-            <div className={classes.FormContainer}>
-                <p className={classes.FormTitle}>CHECK YOUR</p>
-                <h3 className={classes.FormTitle}>PNR STATUS</h3>
+        <div className="CenterContainer" style={{ height: "100vh" }}>
+            <div className="FormContainer">
+                <p className="FormTitle">CHECK YOUR</p>
+                <h3 className="FormTitle">PNR STATUS</h3>
                 <br />
                 <br />
 
@@ -54,7 +54,7 @@ const PNRStatus = () => {
                         onChange={changePnrNumberHandler}
                         id="pnr"
                         type="number"
-                        className={`${classes.InputField} validate`}
+                        className="InputField validate"
                     />
                     <label htmlFor="pnr">Enter PNR number ...</label>
                     <span>

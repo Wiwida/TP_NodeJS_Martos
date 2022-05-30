@@ -1,0 +1,55 @@
+.CenterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FormContainer {
+    background-color: #fff;
+    padding: 2rem;
+    width: 30rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.TicketInfoContainer {
+    background: rgba(255, 255, 255, 0.4);
+    color: rgb(30, 81, 192);
+    padding: 2rem;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(30, 81, 192, 0.153);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+}
+
+.basic_button {
+    background-color: #fff;
+    color: rgb(30, 81, 192);
+    border: 1px solid rgb(30, 81, 192);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.basic_button:hover {
+    background-color: rgb(30, 81, 192);
+    color: #fff;
+    border: 1px solid rgb(30, 81, 192);
+}
+
+.TicketInfoContainer p {
+    margin: 0;
+}
+
+.FormTitle {
+    text-align: center;
+    color: rgb(30, 81, 192);
+}
+
+.basic_button_100 {
+    width: 100%;
+}

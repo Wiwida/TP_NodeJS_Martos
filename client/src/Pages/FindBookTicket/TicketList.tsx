@@ -1,6 +1,6 @@
-import { TicketFindCard } from "../../Components"
 import Masonry from "react-masonry-css"
-import classes from "./FindBookTicket.module.css"
+import { TicketFindCard } from "../../Components"
+import dayjs from "dayjs"
 
 const TicketList = () => {
     const breakpointColumnsObj = {
@@ -11,21 +11,43 @@ const TicketList = () => {
     }
 
     return (
-        <div className={classes.CenterContainer} style={{ minHeight: "90vh" }}>
-            <h3 className={classes.FormTitle}>TRAIN AVAILABILITY</h3>
+        <div className="CenterContainer" style={{ minHeight: "90vh" }}>
+            <h3 className="FormTitle">TRAIN AVAILABILITY</h3>
             <Masonry
                 breakpointCols={breakpointColumnsObj}
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column"
             >
-                <TicketFindCard />
-                <TicketFindCard />
-                <TicketFindCard />
-                <TicketFindCard />
-                <TicketFindCard />
-                <TicketFindCard />
-                <TicketFindCard />
-                <TicketFindCard />
+                <TicketFindCard
+                    train={{
+                        id: "",
+                        nom: "",
+                        dateDepart: dayjs().format("YYYY-MM-DD HH:mm:ss"),
+                        dateArrivee: dayjs().format("YYYY-MM-DD HH:mm:ss"),
+                        gareDepart: {
+                            id: "",
+                            nomGare: "",
+                            gareEtape: [],
+                        },
+                        gareArrivee: {
+                            id: "",
+                            nomGare: "",
+                            gareEtape: [],
+                        },
+                        compagnie: {
+                            id: "",
+                            nom: "",
+                        },
+                        place: [],
+                    }}
+                    miniTrain={{
+                        nom: "",
+                        pnrNumber: "",
+                        fromPlace: "",
+                        toPlace: "",
+                        date: "",
+                    }}
+                />
             </Masonry>
         </div>
     )

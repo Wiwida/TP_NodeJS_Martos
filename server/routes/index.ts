@@ -1,15 +1,17 @@
 import { Request, Response, Router } from "express"
 
+import { mockClient } from "../shared/mockData"
+
 class IndexRouter {
     public readonly router: Router
 
     constructor() {
         this.router = Router()
-        this.router.get("/", [this.getIndex])
+        this.router.get("/api/client/info", [this.getClientInfo])
     }
 
-    private getIndex(_req: Request, res: Response) {
-        res.json({ title: "Express" })
+    private getClientInfo(_req: Request, res: Response) {
+        res.send(mockClient)
     }
 }
 

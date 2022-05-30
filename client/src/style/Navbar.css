@@ -1,0 +1,14 @@
+.Active {
+    background-color: rgb(21, 61, 148);
+}
+
+.Logo {
+    width: 10px;
+}
+.navbar_style {
+    background-color: rgb(30, 81, 192);
+}
+
+.footer_style {
+    background-color: rgb(30, 81, 192) !important;
+}

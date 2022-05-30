@@ -1,6 +1,7 @@
 import Logger from "express-better-logger"
 import cookieParser from "cookie-parser"
-import { createIndexRouter } from "./routes/index"
+import cors from "cors"
+import { createIndexRouter } from "./routes"
 import { createPassagerRouter } from "./routes/passager"
 import { createReservationRouter } from "./routes/reservation"
 import { createTrainRouter } from "./routes/train"
@@ -16,6 +17,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
+app.use(cors())
 app.use(express.static(path.join(__dirname, "public")))
 
 app.use("/", createIndexRouter)

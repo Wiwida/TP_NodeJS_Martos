@@ -5,11 +5,10 @@ body {
 }
 
 .bg {
-    background-image: url(./Assets/bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: rgb(244, 244, 244);
     min-height: 100vh;
     height: 100%;
+    width: 100%;
 }
 
 .center-content {
@@ -37,4 +36,11 @@ body {
 
 .my-masonry-grid_column > div {
     margin-bottom: 30px;
+}
+
+.color_blue {
+    color: rgb(30, 81, 192);
+}
+.font_bold {
+    font-weight: bold;
 }

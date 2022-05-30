@@ -1,17 +1,17 @@
-import classes from "./Cards.module.css"
 import { NavLink } from "react-router-dom"
+import { Place } from "../../../../server/shared/type"
 
-const SeatTypeCard = (props) => {
+type Props = {
+    place: Place
+}
+const SeatTypeCard = ({ place }: Props) => {
     return (
         <div className="card purple darken-4">
-            <h6>
-                <span className={classes.CostPill}>₹ {props.type[0]}00</span>
-            </h6>
             <div
                 className="card-content white-text"
                 style={{ padding: "0.5rem 1rem" }}
             >
-                <p>{props.type} Tier (#A)</p>
+                <p>{place.classe}</p>
                 <p>Train on time</p>
             </div>
             <div className="card-action center" style={{ padding: "0.5rem" }}>
