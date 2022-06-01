@@ -22,8 +22,8 @@ type AllProps = {
 const customStyles = {
     content: {
         position: "absolute",
-        top: "5%",
-        bottom: "5%",
+        top: "30%",
+        bottom: "0%",
         left: "10%",
         right: "10%",
         border: "none",
@@ -104,7 +104,7 @@ const TicketFindCard = ({ miniTrain, train }: AllProps) => {
                         train.place.map((seat) => (
                             <div className="card white darken-4 CardBooked ">
                                 <div
-                                    className="card-content purple-text"
+                                    className="card-content color_blue"
                                     style={{ padding: "0.5rem 1rem" }}
                                 >
                                     <p>{seat.classe}</p>
@@ -133,10 +133,11 @@ const TicketFindCard = ({ miniTrain, train }: AllProps) => {
                                     </select>
                                 </div>
                                 <div
-                                    className="card-action purple darken-4 center"
+                                    className="card-action background_blue center"
                                     style={{ padding: "0.5rem" }}
                                 >
                                     <button
+                                        className="basic_button"
                                         onClick={() =>
                                             addReservationHandler(
                                                 train,
@@ -144,13 +145,15 @@ const TicketFindCard = ({ miniTrain, train }: AllProps) => {
                                             )
                                         }
                                     >
-                                        Book Now
+                                        Réserver
                                     </button>
                                 </div>
                             </div>
                         ))}
                 </div>
-                <button onClick={closeModal}>close</button>
+                <button className="close_button" onClick={closeModal}>
+                    close
+                </button>
             </Modal>
         </div>
     )

@@ -53,3 +53,23 @@
 .basic_button_100 {
     width: 100%;
 }
+
+.background_blue {
+    background-color: rgb(30, 81, 192);
+}
+
+.close_button {
+    background-color: #fff;
+    color: rgb(192, 30, 30);
+    border: 1px solid rgb(192, 30, 30);
+    border-radius: 0.5rem;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.close_button:hover {
+    background-color: rgb(192, 30, 30);
+    color: #fff;
+    border: 1px solid rgb(192, 30, 30);
+}

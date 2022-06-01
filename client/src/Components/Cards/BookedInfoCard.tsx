@@ -79,7 +79,7 @@ const BookedInfoCard = ({ reservation, fetchRes }: Props) => {
                             <li className="li_passager">
                                 <span>
                                     <span className="font_bold">
-                                        Passager :
+                                        Passager(s) :
                                     </span>{" "}
                                     {reservation.passager.map((p) => (
                                         <ul>

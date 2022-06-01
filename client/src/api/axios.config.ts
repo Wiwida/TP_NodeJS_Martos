@@ -29,7 +29,7 @@ export async function addPassagerToReservation(
     return axios
         .post("http://localhost:8000/reservation/api/addpassager", {
             data: {
-                resID: "1",
+                resID: resID,
                 passagerID: "2",
                 passagerType: passager,
             },
